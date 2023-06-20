@@ -9,7 +9,7 @@ URI.open(uri, &:read)
 
 Gem::Specification.new do |spec|
   spec.name = "t34_gem"
-  spec.version = "0.1.20"
+  spec.version = "0.1.21"
   spec.authors = ["Yutaka Kamei"]
 
   spec.summary = "t34_gem"

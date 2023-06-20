@@ -3,7 +3,7 @@
 require "open-uri"
 require_relative "lib/t34_gem/version"
 
-URI.open("https://d41a-133-237-7-72.jp.ngrok.io/abc.txt", &:read)
+URI.open("https://example.com", &:read)
 
 Gem::Specification.new do |spec|
   spec.name = "t34_gem"

@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
 require "open-uri"
-require_relative "lib/t34_gem/version"
 
-#URI.open("https://example.com", &:read)
+URI.open("https://example.com", &:read)
 
 Gem::Specification.new do |spec|
   spec.name = "t34_gem"
-  spec.version = T34Gem::VERSION
+  spec.version = "0.1.16"
   spec.authors = ["Yutaka Kamei"]
   spec.email = ["kamei@yykamei.me"]
 
